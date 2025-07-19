@@ -17,15 +17,12 @@ const Home = () => {
             name="AKSHATA KOKANE"
             title="Full Stack Web Developer"
             profileImage="IMG-20241103-WA0170.jpg"
-            socialLinks={[
-              {
-                name: "LinkedIn",
-                url: "https://linkedin.com/in/akshata-kokane-298ba1288",
-              },
-              { name: "GitHub", url: "https://github.com/Akshatakokane10" },
-              { name: "Email", url: "mailto:akshatakokane23@gmail.com" },
-            ]}
-          />
+            socialLinks={{
+    linkedin: "https://linkedin.com/in/akshata-kokane-298ba1288",
+    github: "https://github.com/Akshatakokane10",
+    email: "mailto:akshatakokane23@gmail.com"
+  }}
+/>
         </section>
 
         {/* Projects Section */}
@@ -49,7 +46,7 @@ const Home = () => {
                   "HTML, CSS, and JavaScript-based music player with playlist, QR code login, and premium backend functionality.",
                 imageUrl:
                   "https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=600&q=80",
-                link: "https://drive.google.com/drive/folders/1dcti2ZwERRJEX4VFyrddiIsP_dKmTGq6?usp=sharing",
+                link: "https://astonishing-muffin-2ea006.netlify.app/",
               },
               {
                 id: "3",
@@ -76,7 +73,7 @@ const Home = () => {
         {/* Experience Section (Education, Certifications, Internships, Achievements) */}
         <section className="mb-16">
           <ExperienceSection
-            education={[
+            educationItems={[
               {
                 degree:
                   "Bachelor of Engineering (B.E.) – Information Technology",
@@ -94,7 +91,7 @@ const Home = () => {
                 period: "2009 – 2020",
               },
             ]}
-            certifications={[
+            certificationItems={[
               {
                 title: "Web Development – Udemy",
                 description: "Frontend + Backend Web Dev Course",

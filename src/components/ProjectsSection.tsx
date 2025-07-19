@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 interface Project {
   id: string;
-  title: string;
+  title?: string;
   description: string;
   imageUrl: string;
   link?: string;
 }
 
 interface ProjectCardProps {
-  title: string;
+  title?: string;
   description: string;
   imageUrl: string;
   link?: string;
@@ -125,7 +125,7 @@ const defaultProjects: Project[] = [
       "HTML, CSS, and JavaScript-based music player with playlist, QR code login, and premium backend functionality.",
     imageUrl:
       "https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=800&q=80",
-    link: "https://drive.google.com/drive/folders/1dcti2ZwERRJEX4VFyrddiIsP_dKmTGq6?usp=sharing",
+    link: "https://astonishing-muffin-2ea006.netlify.app/",
   },
   {
     id: "3",
